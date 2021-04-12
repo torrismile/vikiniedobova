@@ -124,19 +124,6 @@ function checkLengthLetter(input, min, max) {
     return isError;
 }
 
-function checkLengthNumber(input, min, max) {
-    let isError = true;
-    if (input.value.length < min) {
-        showError(input);
-    } else if (input.value.length > max) {
-        showError(input);
-    } else {
-        isError = false;
-        showSuccess(input);
-    }
-    return isError;
-}
-
 //Get fieldname
 function getFieldName(input) {
     return input.id.charAt(0).toUpperCase() + input.id.slice(1);
@@ -149,21 +136,16 @@ function setReservationSubmit() {
     document.getElementById('email').addEventListener('focusout', (event) => {
         checkEmail(event.target);
     });;
-    document.getElementById('telefon').addEventListener('focusout', (event) => {
-        checkLengthNumber(event.target, 9, 16);
-    });;
 
     //Event listener
     document.querySelector("#reservation-submit").addEventListener('click', function (e) {
         e.preventDefault();
         let username = document.querySelector('#jmeno');
-        let telephone = document.querySelector('#telefon');
         let email = document.querySelector('#email');
 
         let formError = checkRequired([username, email]);
 
         let userNameError = checkLengthLetter(username, 3, 25);
-        // let telephoneError = checkLengthNumber(telephone, 9, 16);
         let emailError = checkEmail(email);
         let formJson = convertJson();
         if (!(formError || userNameError || emailError)) {
