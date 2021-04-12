@@ -1,0 +1,403 @@
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+
+    /* ---------------------------------------- */
+    /* HERO SECTION */
+    /* ---------------------------------------- */
+
+    .hero-text-box {
+        left: 24%;
+    }
+
+    /* ---------------------------------------- */
+    /* REUSABLE COMPONENTS */
+    /* ---------------------------------------- */
+
+    .container-1 {
+        padding: 0 8rem;
+    }
+
+    /* ---------------------------------------- */
+    /* HEADINGS*/
+    /* ---------------------------------------- */
+
+    h2 {
+        margin-bottom: 6rem;
+    }
+
+    /* ---------------------------------------- */
+    /* MAIN SECTION */
+    /* ---------------------------------------- */
+    main {
+        padding: 10rem 6rem;
+    }
+
+    /* ---------------------------------------- */
+    /* PORTFOLIO */
+    /* ---------------------------------------- */
+
+    .portfolio-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        row-gap: 4.5rem;
+        column-gap: 0;
+        padding: 0 2.5rem;
+    }
+
+    /* ---------------------------------------- */
+    /* FOOTER */
+    /* ---------------------------------------- */
+
+    .copyright-col p {
+        margin-top: 0;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    
+    /* ---------------------------------------- */
+    /* MAIN SECTION */
+    /* ---------------------------------------- */
+
+    main {
+        padding: 10rem 4rem;
+    }
+
+    .text-col {
+        padding-bottom: 1.5rem;
+    }
+
+    .text p {
+        font-size: 160%;
+        word-spacing: 0.2rem;
+    }
+
+    /* ---------------------------------------- */
+    /* HERO SECTION */
+    /* ---------------------------------------- */
+    .hero-text-box {
+        left: 30%;
+    }
+
+    /* ---------------------------------------- */
+    /* REUSABLE COMPONENTS */
+    /* ---------------------------------------- */
+
+    .container-1 {
+        padding: 0 2rem;
+    }
+
+    /* ---------------------------------------- */
+    /* HEADINGS */
+    /* ---------------------------------------- */
+
+    h2 {
+        margin-bottom: 6rem;
+    }
+
+    /* ---------------------------------------- */
+    /* PORTFOLIO */
+    /* ---------------------------------------- */
+
+    .portfolio-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        row-gap: 2.5rem;
+        column-gap: 0;
+        padding: 0 2rem;
+    }
+
+    .content-link {
+        padding: 1rem;
+        font-size: 140%;
+        width: 130px;
+    }
+
+    /* ---------------------------------------- */
+    /* FOOTER */
+    /* ---------------------------------------- */
+    
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .copyright-col p {
+        font-size: 120%;
+    }
+
+    .copyright-col p {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    /* ---------------------------------------- */
+    /* HEADINGS */
+    /* ---------------------------------------- */
+
+    h1 {
+        font-size: 180%;
+        line-height: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    h2 {
+        font-size: 300%;
+        margin-bottom: 5rem;
+    }
+
+    h4 {
+        font-size: 160%;
+        margin-top: 2rem;
+    }
+
+        /* ---------------------------------------- */
+    /* HERO SECTION */
+    /* ---------------------------------------- */
+
+    .hero-text-box {
+        left: 38%;
+        top: 19.5%;
+    }
+
+    .hero-text {
+        font-size: 160%;
+    }
+
+    /* ---------------------------------------- */
+    /* MAIN SECTION */
+    /* ---------------------------------------- */
+
+    main {
+        padding: 0.5rem 0 0 0;
+    }
+    
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        padding: 4rem 2rem;
+    }
+
+    .image-col {
+        margin-right: 0;
+        margin-top: 3rem;
+        display: flex;
+        order: 2;
+    }
+
+    .image-col .img-about img {
+        box-shadow: none;
+    }
+
+    .text p {
+        font-size: 150%;
+        word-spacing: 0.2rem;
+    }
+
+    /* ---------------------------------------- */
+    /* SKILL SECTION */
+    /* ---------------------------------------- */
+
+    .skill-section {
+        padding: 6rem 2rem;
+    }
+
+    .skill-name {
+        font-size: 10px;
+        padding: 0.5rem;
+    }
+
+    .skill-bar,
+    .skill-per {
+        height: 15px;
+    }
+
+    .skill-per::before {
+        position: absolute;
+        padding: 2px 3px;
+        font-size: 10px;
+        top: -32px;
+        right: 0px;
+        height: 25px;
+    }
+
+    .skills {
+        padding: 0;
+    }
+
+    .container-1 div h2 {
+        margin-bottom: 4rem;
+    }
+
+    /* ---------------------------------------- */
+    /* PORTFOLIO SECTION */
+    /* ---------------------------------------- */
+
+    .portfolio-section {
+        padding: 1rem 0;
+    }
+
+    .portfolio-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        row-gap: 2rem;
+        column-gap: 1.5rem;
+        padding: 0 2rem 1rem;
+    }
+
+    .content {
+        width: 100%;
+        margin: 0;
+    }
+
+    .content-link {
+        padding: 1rem;
+        font-size: 120%;
+        width: 120px;
+    }
+
+    /* ---------------------------------------- */
+    /* FORM */
+    /* ---------------------------------------- */
+    .contact-us {
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+
+    textarea {
+        min-height: 8rem;
+    }
+
+    input {
+        padding: 20px;
+    }
+
+    .styled-input label {
+        position: absolute;
+        padding: 0.5rem 30px 1.5rem 10px;
+        top: -3px;
+    }
+
+    .input-container {
+        width: 350px;
+    }
+
+    .styled-input {
+        width:100%;
+    }
+
+    .btn-center .btn-full {
+        width: 180px;
+        padding: 2rem;   
+    }
+
+    .btn-full {
+        padding: 1.5rem;
+        width: 180px;
+        margin: 0 !important;
+    }
+
+    .contact-form-section {
+        margin-top: 5rem;
+        padding: 0 2rem;
+    }
+
+    .content-details h3 {
+        font-size: 160%;
+    }
+
+    .content-details p {
+        font-size: 120%;
+    }
+
+    /* ---------------------------------------- */
+    /* FOOTER */
+    /* ---------------------------------------- */
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        padding: 4rem 2rem;
+        padding: 0;
+    }
+
+    .copyright-col p {
+        font-size: 80%;
+    }
+
+    .copyright-col {
+        margin-top: 1.5rem;
+    }
+
+    .social-container {
+        position: absolute;
+        right: 18px;
+        bottom: 10px;
+    }
+
+    footer {
+        padding: 4rem 2rem;
+    }
+}
+
+
+/* @media only screen and (min-width: 400px) and (max-device-width: 400px) and (orientation:landscape) {
+} */
+
+
+@media only screen and (max-width: 767px) and (orientation:landscape) {
+   
+    /* ---------------------------------------- */
+    /* HEADER */
+    /* ---------------------------------------- */
+
+    .hero-text-box {
+        left: 22%;
+        top: 35%;
+    }
+
+    .social-icons li i {
+        color: #fff;
+        font-size: 20px;
+    }
+
+    /* ---------------------------------------- */
+    /* MAIN SECTION */
+    /* ---------------------------------------- */
+
+    .image-col {
+        margin-top: 0;
+        margin-right: 3rem;
+        order: 0;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* ---------------------------------------- */
+    /* SKILL SECTION */
+    /* ---------------------------------------- */
+
+    .container-1 {
+        width: 80%;
+    }
+
+    /* ---------------------------------------- */
+    /* PORTFOLIO */
+    /* ---------------------------------------- */
+
+    .portfolio-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        row-gap: 1rem;
+        column-gap: 2rem;
+        padding: 0 2rem 1rem;
+    }
+}
